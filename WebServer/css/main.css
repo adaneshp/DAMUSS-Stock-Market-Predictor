@@ -1,0 +1,31 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: Product Sans;
+    font-size: 2.5em;
+}
+
+img{
+    margin-bottom: 20px;
+}
+
+form{
+    width: 50%;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+package stockapi;
+option go_package = "./stockapi";
+
+service StockPrediction{
+	rpc getStock (APIRequest) returns (APIReturn){}
+}
+
+message APIRequest{
+	string name = 1;
+	string date = 2;
+}
+
+message APIReturn{
+	repeated string date = 1;
+	repeated float data = 2;
+	float prediction = 3;
+	string recomandation = 4;
+	string status = 5;
+}
